@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Dev SSO Test">
+	<main>
+		<ul role="list" class="link-card-grid">
+			<button class="sso-login">SSO Login</button>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+	.sso-login{
+		background-color: rgb(255, 166, 0);
+		color: white;
+		border: none;
+		height: 40px;
+		border-radius: 10px;
+		font-weight: 500;
+	}
+</style>
